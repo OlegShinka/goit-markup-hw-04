@@ -10,6 +10,7 @@ body {
   --primary-bg-color: #ffffff;
   --secondary-text-color: #434455;
   --secondary-bg-color: #2e2f42;
+  --hero-bg-color: rgba(46, 47, 66, 0.7);
   --title-text-color: #ffffff;
   --subtitle-text-color: #2e2f42;
   --section-bg-color: #f4f4fd;
@@ -21,7 +22,8 @@ body {
   --active-hover-color: #404bbf;
   --header-bottom-border-color: #E7E9FC;
   --btn-filter-color: #E7E9FC;
-  --card-border-color: #E7E9FC
+  --card-border-color: #E7E9FC;
+  --customers-border-color: #8E8F99;
 }
 
 .link {
@@ -52,6 +54,7 @@ body {
 
 .header {
   border-bottom: 1px solid var(--header-bottom-border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .link-logo {
@@ -162,10 +165,16 @@ body {
 /* hero style start */
 
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
   background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -199,6 +208,7 @@ body {
   letter-spacing: 0.04em;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -244,17 +254,9 @@ body {
   margin-right: 24px;
 }
 
-.features-list-title {
-  color: var(--subtitle-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
 
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
+ .features-list-title {
+ }
 .features-list-desc {
   color: var(--secondary-text-color);
   line-height: 1.5;
@@ -370,6 +372,35 @@ body {
   margin-bottom: 0;
 }
 
+.customers {
+  padding-top: 117px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.customers-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.logo-box {
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--customers-border-color);
+  border-radius: 4px;
+}
+
 /* team style end */
 
 
@@ -413,6 +444,7 @@ body {
   color: var(--title-text-color);
   background-color: var(--active-hover-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* filter style end */
@@ -431,6 +463,10 @@ body {
   margin-right: 24px;
   margin-bottom: 48px;
 
+}
+
+.card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card:nth-child(3n) {
