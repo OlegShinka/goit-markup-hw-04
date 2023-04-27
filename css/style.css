@@ -171,7 +171,7 @@ body {
   padding-bottom: 188px;
   text-align: center;
   background-color: var(--secondary-bg-color);
-  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url(../images/people-office.jpg);
+  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -255,8 +255,18 @@ body {
 }
 
 
- .features-list-title {
- }
+.features-list-title {
+  font-style: normal;
+  color: var(--subtitle-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 8px;
+
+}
+
 .features-list-desc {
   color: var(--secondary-text-color);
   line-height: 1.5;
@@ -267,6 +277,19 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: var(--section-bg-color);
+  border-radius: 4px;
+}
+
+.icon {}
 
 /* features style end */
 
