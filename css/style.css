@@ -427,7 +427,7 @@ body {
 }
 
 .social-icon {
-  fill: currentColor;
+  fill: var(--footer-text-color);
 
 }
 
@@ -438,7 +438,7 @@ body {
 /* customers style start */
 
 .customers {
-  padding-top: 117px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -447,7 +447,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   margin-bottom: 72px;
   text-align: center;
   letter-spacing: 0.02em;
@@ -554,7 +554,11 @@ body {
 
 }
 
-.card:hover {
+.card-link {
+  display: block;
+}
+
+.card-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -610,7 +614,7 @@ body {
 .footer-container {
   display: flex;
   flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer-link {
@@ -670,10 +674,10 @@ body {
 }
 
 .footer-icon {
-  fill: currentColor;
+  fill: var(--footer-text-color);
 }
 
-.social-container-title {
+.social-container-desc {
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
