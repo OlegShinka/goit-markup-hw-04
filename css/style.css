@@ -441,7 +441,6 @@ body {
 
 .customers-title {
   color: var(--subtitle-text-color);
-  /* font-style: normal; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -678,7 +677,6 @@ body {
 
 .social-container-desc {
   color: var(--title-text-color);
-  /* font-style: normal; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
